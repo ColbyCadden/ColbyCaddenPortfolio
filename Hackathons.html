@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Robot Arm</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="Home.html">Colby Cadden</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="Home.html">Home</a></li>
+								<li><a href="Robotic Arm.html">Robot Arm</a></li>
+								<li><a href="Awards.html">Random</a></li>
+								<li><a href="Gallery.html">Gallery</a></li>
+
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Robotic Arm</h2>
+								<p>Some servos, AI code, and what not</p>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<h3 class="major">Logbook</h3>
+									<p> For the last several months, I have teamed up with some friends to build a robotic arm. The initial goal was clear: upon detecting a signal, the arm shall travel along a slider and grab a  pen from our hand, hwile detecting any changes in positioning. This required many different aspects of robotics. We have been using Fusion360, KiCAD, VSCode, and chat gpt to wkr on this project. Hardware has included: ESP-3, arduino nano, sg90 servos, elbow servos, ms24 servos, ToF sensors, and many more. 
+
+									<p> I am curretnly working on the end effector(gripper) system, to detect pen location within a deadzone, then initiatign a sequence to grab the pen. I have encountered several challenges, including random interferences, proper code tweaks to ensoure accuracy, and even the continual pinching of my finger in the claw. I have decided to rework the mechanism to work with an sg90 rather than a ms4 to conserve weight and reduce the torque on the rest of the armm. 
+
+									<h3 class="major">Progress Updates.</h3>
+									<p> - Custom gears i built do not function with enough prescision, the gap in between gears leads to a delay when switching direction. 
+										- Currently working on rotation mechanism, have tried: bolts (best option so far), 3d pinted "clips" (too weak), I will look into pruchasing proper shafts.
+										- ToF sesnor (VL53Ox) was detecting claw movement and intefering wiht distance readings. I have adjusted the angel of sensor range. 
+
+
+									<section class="features">
+										<article>
+											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+											<h3 class="major">GitHub Repository</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+											<a href="https://github.com/ColbyCadden/colbycadden.github.io" class="special">Learn more</a>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/Screenshot 2026-02-26 185331.png" alt="" /></a>
+											<h3 class="major">Gallery</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+											<a href="Gallery.html" class="special">Learn more</a>
+										</article>
+									</section>
+
+								</div>
+							</div>
+
+					</section>
+
+				
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
